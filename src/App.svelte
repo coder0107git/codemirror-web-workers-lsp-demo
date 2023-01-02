@@ -41,7 +41,7 @@
 			rootUri: "file:///",
 			workspaceFolders: null,
 			documentUri: `file:///tsconfig.json`,
-			languageId: "yaml",
+			languageId: "json",
 		}),
 	]}
 />
