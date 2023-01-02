@@ -1,0 +1,30 @@
+{
+  "name": "vite-project",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "check": "svelte-check --tsconfig ./tsconfig.json"
+  },
+  "devDependencies": {
+    "@codemirror/lang-json": "^6.0.1",
+    "@codemirror/language": "^6.3.2",
+    "@open-rpc/client-js": "^1.7.1",
+    "@sveltejs/vite-plugin-svelte": "^2.0.0",
+    "@tsconfig/svelte": "^3.0.0",
+    "codemirror": "^6.0.1",
+    "codemirror-languageserver": "^1.11.0",
+    "events": "^3.3.0",
+    "svelte": "^3.54.0",
+    "svelte-check": "^2.10.0",
+    "svelte-codemirror-editor": "^1.1.0",
+    "tslib": "^2.4.1",
+    "typescript": "^4.9.3",
+    "vite": "^4.0.0",
+    "vscode-json-languageservice": "^5.1.3",
+    "vscode-languageserver-protocol": "^3.17.2"
+  }
+}
