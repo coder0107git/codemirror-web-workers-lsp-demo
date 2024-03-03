@@ -39,8 +39,10 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: "20"
-          cache: pnpm
-          cache-dependency-path: ${{ env.BUILD_PATH }}/pnpm-lock.json
+      - name: Setup PNPM
+        uses: pnpm/action-setup@v3
+        with:
+          version: 8
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v4
