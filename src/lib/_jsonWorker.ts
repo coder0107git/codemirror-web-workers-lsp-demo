@@ -7,7 +7,7 @@ import {
 	DidOpenTextDocumentNotification,
 	HoverRequest,
 	InitializeRequest,
-	InitializeResult,
+	type InitializeResult,
 	TextDocumentSyncKind,
 } from "vscode-languageserver-protocol/browser";
 

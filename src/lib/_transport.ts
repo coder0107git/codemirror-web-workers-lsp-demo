@@ -3,7 +3,7 @@ import { getNotifications } from "@open-rpc/client-js/src/Request";
 import type { JSONRPCRequestData, IJSONRPCData } from "@open-rpc/client-js/src/Request";
 
 export default class PostMessageWorkerTransport extends Transport {
-	public worker: undefined | null | Worker;
+	public worker: Worker;
 	public postMessageID: string;
 
 	constructor(worker: Worker) {
