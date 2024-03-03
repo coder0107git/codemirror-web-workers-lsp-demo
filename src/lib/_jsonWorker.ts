@@ -63,8 +63,8 @@ conn.onNotification(DidChangeTextDocumentNotification.type, ({ textDocument, con
 conn.onRequest(CompletionRequest.type, async ({ textDocument, position }) => {
 	const doc = docs[textDocument.uri];
 	if (!doc) return null;
-
-	return jsonService.doComplete(doc, position, jsonService.parseJSONDocument(doc));
+	
+	return jsonService.doComplete(doc, position, await jsonService.parseJSONDocument(doc));
 });
 conn.onRequest(HoverRequest.type, async ({ textDocument, position }) => {
 	const doc = docs[textDocument.uri];
